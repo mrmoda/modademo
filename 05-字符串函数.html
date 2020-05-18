@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>05-字符串函数</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/05-字符串函数/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/05-字符串函数/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u88" class="ax_default box_2">
+        <div id="u88_div" class=""></div>
+        <div id="u88_text" class="text ">
+          <p><span>获取当前文本对象的长度，即字符长度，1个汉字的长度按1计算。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-length (矩形) -->
+      <div id="u89" class="ax_default box_2" data-label="Key-length">
+        <div id="u89_div" class=""></div>
+        <div id="u89_text" class="text ">
+          <p><span>length</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u90" class="ax_default box_2">
+        <div id="u90_div" class=""></div>
+        <div id="u90_text" class="text ">
+          <p><span>获取当前文本对象指定位置的字符，index为大于等于0的整数，字符位置从0开始计数，0为第一位。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-charAt(index) (矩形) -->
+      <div id="u91" class="ax_default box_2" data-label="Key-charAt(index)">
+        <div id="u91_div" class=""></div>
+        <div id="u91_text" class="text ">
+          <p><span>charAt(index)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u92" class="ax_default box_2">
+        <div id="u92_div" class=""></div>
+        <div id="u92_text" class="text ">
+          <p><span>获取当前文本对象中指定位置字符的Unicode编码（中文编码段19968 ~ 40622）；字符起始位置从0开始。 index为大于等于0的整数。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-charCodeAt(index) (矩形) -->
+      <div id="u93" class="ax_default box_2" data-label="Key-charCodeAt(index)">
+        <div id="u93_div" class=""></div>
+        <div id="u93_text" class="text ">
+          <p><span>charCodeAt(index)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u94" class="ax_default box_2">
+        <div id="u94_div" class=""></div>
+        <div id="u94_text" class="text ">
+          <p><span>将当前文本对象与另外一个字符串组合，string为组合后显示在后方的字符串。如：[[ABC.concat('123')]]，返回值是ABC123（注意表达式中别漏了中间那个点“.”）</span></p>
+        </div>
+      </div>
+
+      <!-- Key-concat('string') (矩形) -->
+      <div id="u95" class="ax_default box_2" data-label="Key-concat('string')">
+        <div id="u95_div" class=""></div>
+        <div id="u95_text" class="text ">
+          <p><span>concat('string')</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u96" class="ax_default box_2">
+        <div id="u96_div" class=""></div>
+        <div id="u96_text" class="text ">
+          <p><span>从左至右查询字符串在当前文本对象中首次出现的位置。未查询到，返回值为-1。参数：searchValue为查询的字符串；start为查询的起始位置，官方虽未明说，但经测试是可用的。官方默认没有start，则是从文本的最左侧开始查询。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-indexOf('searchvalue',start) (矩形) -->
+      <div id="u97" class="ax_default box_2" data-label="Key-indexOf('searchvalue',start)">
+        <div id="u97_div" class=""></div>
+        <div id="u97_text" class="text ">
+          <p><span>indexOf('searchvalue',start)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u98" class="ax_default box_2">
+        <div id="u98_div" class=""></div>
+        <div id="u98_text" class="text ">
+          <p><span>从右至左查询字符串在当前文本对象中首次出现的位置。未查询到，返回值为-1。参数：searchValue为查询的字符串；start为查询的起始位置，官方虽未明说，但经测试是可用的。官方默认没有start，则是从文本的最右侧开始查询。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-lastIndexOf('searchvalue,start') (矩形) -->
+      <div id="u99" class="ax_default box_2" data-label="Key-lastIndexOf('searchvalue,start')">
+        <div id="u99_div" class=""></div>
+        <div id="u99_text" class="text ">
+          <p><span>lastIndexOf('searchvalue,start')</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100" class="ax_default box_2">
+        <div id="u100_div" class=""></div>
+        <div id="u100_text" class="text ">
+          <p><span>用新的字符串替换文本对象中指定的字符串。参数：newvalue为新的字符串，searchvalue为被替换的字符串。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-replace('searchvalue','newvalue') (矩形) -->
+      <div id="u101" class="ax_default box_2" data-label="Key-replace('searchvalue','newvalue')">
+        <div id="u101_div" class=""></div>
+        <div id="u101_text" class="text ">
+          <p><span>replace('searchvalue','newvalue')</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u102" class="ax_default box_2">
+        <div id="u102_div" class=""></div>
+        <div id="u102_text" class="text ">
+          <p><span>从当前文本对象中截取从指定位置开始到指定位置结束之间的字符串。参数：start为截取部分的起始位置，该数值可为负数。负数代表从文本对象的尾部开始，-1表示末位。-2表示倒数第二位。end为截取部分的结束位置，可省略，省略则表示从截取开始位置至文本对象的末位。这里提取的字符串不包含结束位置。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-slice(start,end) (矩形) -->
+      <div id="u103" class="ax_default box_2" data-label="Key-slice(start,end)">
+        <div id="u103_div" class=""></div>
+        <div id="u103_text" class="text ">
+          <p><span>slice(start,end)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u104" class="ax_default box_2">
+        <div id="u104_div" class=""></div>
+        <div id="u104_text" class="text ">
+          <p><span>将当前文本对象中与分隔字符相同的字符转为“,”，形成多组字符串，并返回从左开始的指定组数。</span></p><p><span>参数：separator为分隔字符，分隔字符可以为空，为空时将分隔每个字符为一组；limit为返回组数的数值，该参数可以省略，省略该参数则返回所有字符串组。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-split('separator',limit) (矩形) -->
+      <div id="u105" class="ax_default box_2" data-label="Key-split('separator',limit)">
+        <div id="u105_div" class=""></div>
+        <div id="u105_text" class="text ">
+          <p><span>split('separator',limit)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u106" class="ax_default box_2">
+        <div id="u106_div" class=""></div>
+        <div id="u106_text" class="text ">
+          <p><span>当前文本对象中从指定起始位置截取一定长度的字符串。参数：start为截取的起始位置，length为截取的长度，该参数可以省略，省略则表示从起始位置一直截取到文本对象末尾。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-substr(start,length) (矩形) -->
+      <div id="u107" class="ax_default box_2" data-label="Key-substr(start,length)">
+        <div id="u107_div" class=""></div>
+        <div id="u107_text" class="text ">
+          <p><span>substr(start,length)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u108" class="ax_default box_2">
+        <div id="u108_div" class=""></div>
+        <div id="u108_text" class="text ">
+          <p><span>从当前文本对象中截取从指定位置开始到另一指定位置区间的字符串。参数：from为指定区间的起始位置，to为指定区间的结束位置，该参数可以省略，省略则表示从起始位置截取到文本对象的末尾。这里提取的字符串不包含末位。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-substring(from,to) (矩形) -->
+      <div id="u109" class="ax_default box_2" data-label="Key-substring(from,to)">
+        <div id="u109_div" class=""></div>
+        <div id="u109_text" class="text ">
+          <p><span>substring(from,to)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u110" class="ax_default box_2">
+        <div id="u110_div" class=""></div>
+        <div id="u110_text" class="text ">
+          <p><span>将文本对象中所有的大写字母转换为小写字母。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-toLowerCase( ) (矩形) -->
+      <div id="u111" class="ax_default box_2" data-label="Key-toLowerCase( )">
+        <div id="u111_div" class=""></div>
+        <div id="u111_text" class="text ">
+          <p><span>toLowerCase( )</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u112" class="ax_default box_2">
+        <div id="u112_div" class=""></div>
+        <div id="u112_text" class="text ">
+          <p><span>将文本对象中所有的小写字母转换为大写字母。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-toUpperCase( ) (矩形) -->
+      <div id="u113" class="ax_default box_2" data-label="Key-toUpperCase( )">
+        <div id="u113_div" class=""></div>
+        <div id="u113_text" class="text ">
+          <p><span>toUpperCase( )</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u114" class="ax_default box_2">
+        <div id="u114_div" class=""></div>
+        <div id="u114_text" class="text ">
+          <p><span>删除文本对象两端的空格。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-trim( ) (矩形) -->
+      <div id="u115" class="ax_default box_2" data-label="Key-trim( )">
+        <div id="u115_div" class=""></div>
+        <div id="u115_text" class="text ">
+          <p><span>trim( )</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u116" class="ax_default box_2">
+        <div id="u116_div" class=""></div>
+        <div id="u116_text" class="text ">
+          <p><span>将一个逻辑值转换为字符串。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-toString( ) (矩形) -->
+      <div id="u117" class="ax_default box_2" data-label="Key-toString( )">
+        <div id="u117_div" class=""></div>
+        <div id="u117_text" class="text ">
+          <p><span>toString( )</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (热区) -->
+      <div id="u118" class="ax_default">
+      </div>
+    </div>
+  </body>
+</html>

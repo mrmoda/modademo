@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>08-中继器函数</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/08-中继器函数/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/08-中继器函数/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u253" class="ax_default box_2">
+        <div id="u253_div" class=""></div>
+        <div id="u253_text" class="text ">
+          <p><span>中继器的对象。Item.Repeater即为Item所在的中继器对象。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-Repeater (矩形) -->
+      <div id="u254" class="ax_default box_2" data-label="Key-Repeater">
+        <div id="u254_div" class=""></div>
+        <div id="u254_text" class="text ">
+          <p><span>Repeater</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u255" class="ax_default box_2">
+        <div id="u255_div" class=""></div>
+        <div id="u255_text" class="text ">
+          <p><span>中继器项目列表中可见项的数量。比如：项目列表共有23项，分页显示为每页7项。当项目列表在第1、2、3页时，可见项数量为7；当项目列表在第4页时，可见项数量为2。（即：前面每页都是7项，最后一页只有2项）</span></p>
+        </div>
+      </div>
+
+      <!-- Key-visibleItemCount (矩形) -->
+      <div id="u256" class="ax_default box_2" data-label="Key-visibleItemCount">
+        <div id="u256_div" class=""></div>
+        <div id="u256_text" class="text ">
+          <p><span>visibleItemCount</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u257" class="ax_default box_2">
+        <div id="u257_div" class=""></div>
+        <div id="u257_text" class="text ">
+          <p><span>获取中继器项目列表的总数量，或者叫加载项数量。默认情况下项目列表的总数量会与中继器数据集中的数据行数量一致，但是，如果进行了筛选，项目列表的总数量则是筛选后的数量，这个数量与分页无关。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-itemCount (矩形) -->
+      <div id="u258" class="ax_default box_2" data-label="Key-itemCount">
+        <div id="u258_div" class=""></div>
+        <div id="u258_text" class="text ">
+          <p><span>itemCount</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u259" class="ax_default box_2">
+        <div id="u259_div" class=""></div>
+        <div id="u259_text" class="text ">
+          <p><span>获取中继器数据集中数据行的总数量。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-dataCount (矩形) -->
+      <div id="u260" class="ax_default box_2" data-label="Key-dataCount">
+        <div id="u260_div" class=""></div>
+        <div id="u260_text" class="text ">
+          <p><span>dataCount</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u261" class="ax_default box_2">
+        <div id="u261_div" class=""></div>
+        <div id="u261_text" class="text ">
+          <p><span>获取中继器分页的总数量，即能够获取分页后共有多少页。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-pageCount (矩形) -->
+      <div id="u262" class="ax_default box_2" data-label="Key-pageCount">
+        <div id="u262_div" class=""></div>
+        <div id="u262_text" class="text ">
+          <p><span>pageCount</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u263" class="ax_default box_2">
+        <div id="u263_div" class=""></div>
+        <div id="u263_text" class="text ">
+          <p><span>获取中继器项目列表当前显示内容的页码。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-pageIndex (矩形) -->
+      <div id="u264" class="ax_default box_2" data-label="Key-pageIndex">
+        <div id="u264_div" class=""></div>
+        <div id="u264_text" class="text ">
+          <p><span>pageIndex</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u265" class="ax_default box_2">
+        <div id="u265_div" class=""></div>
+        <div id="u265_text" class="text ">
+          <p><span>获取数据集一行数据的集合，即数据行的对象。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-Item (矩形) -->
+      <div id="u266" class="ax_default box_2" data-label="Key-Item">
+        <div id="u266_div" class=""></div>
+        <div id="u266_text" class="text ">
+          <p><span>Item</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u267" class="ax_default box_2">
+        <div id="u267_div" class=""></div>
+        <div id="u267_text" class="text ">
+          <p><span>目标数据行的对象。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-TargetItem (矩形) -->
+      <div id="u268" class="ax_default box_2" data-label="Key-TargetItem">
+        <div id="u268_div" class=""></div>
+        <div id="u268_text" class="text ">
+          <p><span>TargetItem</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u269" class="ax_default box_2">
+        <div id="u269_div" class=""></div>
+        <div id="u269_text" class="text ">
+          <p><span>获取数据行中指定列的值。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-Item.列 (矩形) -->
+      <div id="u270" class="ax_default box_2" data-label="Key-Item.列">
+        <div id="u270_div" class=""></div>
+        <div id="u270_text" class="text ">
+          <p><span>Item.列</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u271" class="ax_default box_2">
+        <div id="u271_div" class=""></div>
+        <div id="u271_text" class="text ">
+          <p><span>获取数据行的索引编号，编号起始为1，由上至下每行递增1。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-index (矩形) -->
+      <div id="u272" class="ax_default box_2" data-label="Key-index">
+        <div id="u272_div" class=""></div>
+        <div id="u272_text" class="text ">
+          <p><span>index</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u273" class="ax_default box_2">
+        <div id="u273_div" class=""></div>
+        <div id="u273_text" class="text ">
+          <p><span>判断数据行是否为第1行；如果是第1行，返回值为“True”，否则为“False”。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-isFirst (矩形) -->
+      <div id="u274" class="ax_default box_2" data-label="Key-isFirst">
+        <div id="u274_div" class=""></div>
+        <div id="u274_text" class="text ">
+          <p><span>isFirst</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u275" class="ax_default box_2">
+        <div id="u275_div" class=""></div>
+        <div id="u275_text" class="text ">
+          <p><span>判断数据行是否为最末行；如果是最末行，返回值为“True”，否则为“False”。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-isLast (矩形) -->
+      <div id="u276" class="ax_default box_2" data-label="Key-isLast">
+        <div id="u276_div" class=""></div>
+        <div id="u276_text" class="text ">
+          <p><span>isLast</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u277" class="ax_default box_2">
+        <div id="u277_div" class=""></div>
+        <div id="u277_text" class="text ">
+          <p><span>判断数据行是否为偶数行；如果是偶数行，返回值为“True”，否则为“False”。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-isEven (矩形) -->
+      <div id="u278" class="ax_default box_2" data-label="Key-isEven">
+        <div id="u278_div" class=""></div>
+        <div id="u278_text" class="text ">
+          <p><span>isEven</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u279" class="ax_default box_2">
+        <div id="u279_div" class=""></div>
+        <div id="u279_text" class="text ">
+          <p><span>判断数据行是否为奇数行；如果是奇数行，返回值为“True”，否则为“False”。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-isOdd (矩形) -->
+      <div id="u280" class="ax_default box_2" data-label="Key-isOdd">
+        <div id="u280_div" class=""></div>
+        <div id="u280_text" class="text ">
+          <p><span>isOdd</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u281" class="ax_default box_2">
+        <div id="u281_div" class=""></div>
+        <div id="u281_text" class="text ">
+          <p><span>判断数据行是否为被标记；如果被标记，返回值为“True”，否则为“False”。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-isMarked (矩形) -->
+      <div id="u282" class="ax_default box_2" data-label="Key-isMarked">
+        <div id="u282_div" class=""></div>
+        <div id="u282_text" class="text ">
+          <p><span>isMarked</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u283" class="ax_default box_2">
+        <div id="u283_div" class=""></div>
+        <div id="u283_text" class="text ">
+          <p><span>判断数据行是否为可见行；如果是可见行，返回值为“True”，否则为“False”。</span></p>
+        </div>
+      </div>
+
+      <!-- Key-isVisible (矩形) -->
+      <div id="u284" class="ax_default box_2" data-label="Key-isVisible">
+        <div id="u284_div" class=""></div>
+        <div id="u284_text" class="text ">
+          <p><span>isVisible</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (热区) -->
+      <div id="u285" class="ax_default">
+      </div>
+    </div>
+  </body>
+</html>
